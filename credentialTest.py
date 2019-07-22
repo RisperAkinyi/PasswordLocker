@@ -55,7 +55,7 @@ class TestCredential(unittest.TestCase):
         Test to check if credentials are copied to clipboard.
         """
         self.new_cred.save_cred()
-        Credential.copy_cred('Lugaga')
+        Credential.copy_cred('risras')
         self.assertEqual(pyperclip.paste(), self.new_cred.username)
 
     
