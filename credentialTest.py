@@ -27,3 +27,10 @@ class TestCredential(unittest.TestCase):
         self.assertEqual(self.new_cred.account_name, 'instagram')
         self.assertEqual(self.new_cred.username, 'risras')
         self.assertEqual(self.new_cred.password, 'natty')
+
+    def test_store_existing_cred(self):
+        """
+        Test case to check whether credentials can be stored in cred_list.
+        """
+        self.new_cred.save_cred()
+        self.assertEqual(len(Credential.cred_list), 1)
