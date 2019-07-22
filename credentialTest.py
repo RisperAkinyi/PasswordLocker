@@ -34,3 +34,12 @@ class TestCredential(unittest.TestCase):
         """
         self.new_cred.save_cred()
         self.assertEqual(len(Credential.cred_list), 1)
+
+    def test_store_multiple_cred(self):
+        """
+        Test case to check whether multiple credentials can be stored in cred_list.
+        """
+        self.new_cred.save_cred()
+        test_cred = Credential('linkedIn','Risper', 'orissy')
+        test_cred.save_cred()
+        self.assertEqual(len(Credential.cred_list), 2)
