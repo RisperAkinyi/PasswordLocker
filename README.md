@@ -8,7 +8,7 @@ This application allows a user to create an account. Login in and save their cre
 
 - Open your browser browser.
 - Load gitHub on your browser.
-- Search for Lugaga/Password-Locker.
+- Search for RisperAkinyi/PasswordLocker.
 - Clone the repository.
 - Run `./run.py` on your terminal.
 
