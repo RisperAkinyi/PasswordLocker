@@ -14,7 +14,7 @@ class TestCredential(unittest.TestCase):
         """
         Method that runs before the test cases.
         """
-        self.new_cred = Credential('github','Lugaga', 'tangodown!')
+        self.new_cred = Credential('instagram','risras', 'natty')
     def tearDown(self):
         """
         Method that does clean up after each test has run.
@@ -24,6 +24,6 @@ class TestCredential(unittest.TestCase):
         """
         Test case to see if the objects are being initialized properly.
         """
-        self.assertEqual(self.new_cred.account_name, 'github')
-        self.assertEqual(self.new_cred.username, 'Lugaga')
-        self.assertEqual(self.new_cred.password, 'tangodown!')
+        self.assertEqual(self.new_cred.account_name, 'instagram')
+        self.assertEqual(self.new_cred.username, 'risras')
+        self.assertEqual(self.new_cred.password, 'natty')
