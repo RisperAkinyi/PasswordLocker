@@ -49,4 +49,13 @@ class TestCredential(unittest.TestCase):
         Test case to check if the credentials can be displayed.
         """
         self.assertEqual(Credential.display_cred(), Credential.cred_list)
+
+    def test_copy_cred(self):
+        """
+        Test to check if credentials are copied to clipboard.
+        """
+        self.new_cred.save_cred()
+        Credential.copy_cred('Lugaga')
+        self.assertEqual(pyperclip.paste(), self.new_cred.username)
+
     
