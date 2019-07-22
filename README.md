@@ -13,3 +13,14 @@
 * Python3.6.
 * Markdown.
 
+## BDD
+| Behavior : | Input - receives: | Output - return: |
+| :-------------: | :-------------: | :-------------: |
+| Take user registration details       | Names,Username and Password       | Created User       |
+| Take user login details       | Username and Password       | Login User       |
+| Create credentials accounts | register | created account |
+| Display credentials accounts | display | Returned created accounts list |
+| Log Out | log out | Log Out was successful ....... |
+| Exit | exit | See you again Amigo!! ....... |
+
+
