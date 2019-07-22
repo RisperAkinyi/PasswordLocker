@@ -34,3 +34,6 @@ class TestUser(unittest.TestCase):
         """
         self.new_user.save_user()
         self.assertTrue(User.user_exists('risras'))
+
+if __name__ == '__main__':
+    unittest.main()

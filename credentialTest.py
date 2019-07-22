@@ -58,4 +58,5 @@ class TestCredential(unittest.TestCase):
         Credential.copy_cred('risras')
         self.assertEqual(pyperclip.paste(), self.new_cred.username)
 
-    
+if __name__ == '__main__':
+    unittest.main()    
